@@ -9,5 +9,10 @@ describe Grade do
     it "return 'Green: 2'  when pass 'Green, Green' " do
       expect(subject.generate_summary('Green, Green')).to eq 'Green: 2'
     end
+
+    it "return 'Amber: 1' when pass 'Amber' " do
+      expect(subject.generate_summary('Amber')).to eq 'Amber: 1'
+    end
+
   end
 end
