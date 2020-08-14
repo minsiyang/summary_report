@@ -1,6 +1,8 @@
 class Grade
   def generate_summary(string)
+
     arr = string.split(", ")
+    
     if arr.include?('Amber')
       "Amber: #{arr.count('Amber')}"
     elsif arr.include?('Red')
