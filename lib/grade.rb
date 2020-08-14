@@ -1,5 +1,6 @@
 class Grade
   def generate_summary(string)
-    'Green: 1'
+    arr = string.split(", ")
+    "Green: #{arr.count('Green')}"
   end
 end
