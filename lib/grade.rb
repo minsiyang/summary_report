@@ -5,8 +5,7 @@ class Grade
       s = arr[0]
       "#{s}: #{arr.count(s)}"
     else 
-      s = arr.uniq.map { |x| "#{x}: #{arr.count(x)}"}
-      s.join("\n")
+      arr.uniq.map { |x| "#{x}: #{arr.count(x)}"}.join("\n")
     end
   end
 end
