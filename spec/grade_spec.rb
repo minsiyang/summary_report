@@ -22,5 +22,10 @@ describe Grade do
       expect(subject.generate_summary('Green, Amber')).to eq "Green: 1\nAmber: 1"
     end
 
+    it "return result for 3 color mixed grades" do
+      grades = "Green, Amber, Red, Amber, Green"
+      result = "Green: 2\nAmber: 2\nRed: 1"
+      expect(subject.generate_summary(grades)).to eq result
+    end
   end
 end

@@ -12,3 +12,4 @@
 |"Amber"         |   "Amber: 1" |
 | "Red"          |   "Red: 1"   |
 | "Green, Amber" |   "Green: 1\nAmber: 1"|
+| "Green, Amber, Red, Amber, Green" | "Green: 2\nAmber: 2\nRed: 1" |
