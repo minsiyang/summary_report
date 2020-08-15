@@ -1,21 +1,12 @@
 class Grade
   def generate_summary(string)
-    h = Hash.new(0)
     arr = string.split(", ")
-    arr.each do |w|
-      h[w] += 1
+    if arr.uniq.size == 1
+      s = arr[0]
+      "#{s}: #{arr.count(s)}"
+    else 
+      s = arr.map { |x| "#{x}: #{arr.count(x)}"}
+      s.join("\n")
     end
-   
-    h.each do |k, v|
-     return "#{k}: #{v}"
-    end
-  
-    # if arr.include?('Amber')
-    #   "Amber: #{arr.count('Amber')}"
-    # elsif arr.include?('Red')
-    #   "Red: #{arr.count('Red')}"
-    # else
-    #   "Green: #{arr.count('Green')}"
-    # end
   end
 end

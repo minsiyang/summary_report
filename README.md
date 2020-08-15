@@ -6,7 +6,7 @@
   - Output will resemble a version of "Green: 3\nAmber: 1\nRed: 1"
 
 |  input         |   output     |
-| :--:           |  :--:        |
+|   :--:         |  :--:        |
 | "Green"        |   "Green: 1" |
 | "Green, Green" |   "Green: 2" |
 |"Amber"         |   "Amber: 1" |
